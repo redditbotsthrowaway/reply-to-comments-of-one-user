@@ -21,7 +21,7 @@ myself = reddit.redditor(str(c))
 for comment in user.comments.new():
     if myself.link_karma + myself.comment_karma > 1:
         try:
-            a = random.randint(5,10)
+            a = random.randint(20,30)
             comment.reply(reply)
             sleep(a)
         except:
